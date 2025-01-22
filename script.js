@@ -19,7 +19,7 @@ document.getElementById('loginButton').addEventListener('click', () => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
     if (storedUser && storedUser.username === username && storedUser.password === password) {
         alert('Login successful!');
-        window.location.href = '/Dashboard/dashboard.html';
+        window.location.href = 'subdirectory/dashboard.html';
     } else {
         alert('Invalid login credentials. Password must be at least 6 characters.');
     }
